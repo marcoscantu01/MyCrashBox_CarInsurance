@@ -1,6 +1,6 @@
 class AdminController < ApplicationController
 	before_action :authenticate_user!
-	before_action :admin?
+	before_action :admin_only!
 
 	def index
 	end
@@ -8,8 +8,8 @@ class AdminController < ApplicationController
 
 	private
 
-	def admin?
-		if current_user.role_id != 99
+	def admin_only!
+		if !current_user.admin?
 			redirect_to "/"
 		end
 	end
