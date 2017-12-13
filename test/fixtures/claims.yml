@@ -1,0 +1,41 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  date_accident: MyText
+  time_accident: MyText
+  location: MyText
+  police_report: MyString
+  officer_name: MyString
+  officer_agency: MyString
+  citation_number: 1
+  pic_url: MyString
+  other_name: MyString
+  other_license: 1
+  other_state: MyString
+  other_address: MyString
+  other_city: MyString
+  other_state: MyString
+  other_zip: 1
+  other_telephone: 1
+  other_insurance: MyString
+  other_plate: 1
+
+two:
+  date_accident: MyText
+  time_accident: MyText
+  location: MyText
+  police_report: MyString
+  officer_name: MyString
+  officer_agency: MyString
+  citation_number: 1
+  pic_url: MyString
+  other_name: MyString
+  other_license: 1
+  other_state: MyString
+  other_address: MyString
+  other_city: MyString
+  other_state: MyString
+  other_zip: 1
+  other_telephone: 1
+  other_insurance: MyString
+  other_plate: 1

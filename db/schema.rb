@@ -10,7 +10,41 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20171121172749) do
+ActiveRecord::Schema.define(version: 20171213015740) do
+
+  create_table "claims", force: :cascade do |t|
+    t.text "date_accident"
+    t.text "time_accident"
+    t.text "location"
+    t.string "police_report"
+    t.string "officer_name"
+    t.string "officer_agency"
+    t.integer "citation_number"
+    t.string "pic_url"
+    t.string "other_name"
+    t.integer "other_license"
+    t.string "other_state"
+    t.string "other_address"
+    t.string "other_city"
+    t.integer "other_zip"
+    t.integer "other_telephone"
+    t.string "other_insurance"
+    t.integer "other_plate"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+  end
+
+  create_table "insurances", force: :cascade do |t|
+    t.string "driver_name"
+    t.integer "driver_license"
+    t.string "state"
+    t.text "street"
+    t.text "city"
+    t.integer "zip"
+    t.integer "telephone"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+  end
 
   create_table "users", force: :cascade do |t|
     t.string "email", default: "", null: false

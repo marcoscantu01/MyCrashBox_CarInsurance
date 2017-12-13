@@ -1,0 +1,77 @@
+  <head>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>Heroic Features - Start Bootstrap Template</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom styles for this template -->
+    <link href="css/heroic-features.css" rel="stylesheet">
+
+  </head>
+
+  <body>
+
+   
+
+    <!-- Page Content -->
+    <div class="container">
+
+      <!-- Jumbotron Header -->
+      <header class="jumbotron my-4">
+        <h1 class="display-3">Welcome!</h1>
+        <p class="lead">Greetings and welcome to your CrashBox! Your CrashBox stores all your insurance information for your automotives and keeps track of all the claims you've processed or are about to process! We keep your things tidy in here so that you can keep things tidy out there!</p>
+      </header>
+
+      <!-- Page Features -->
+      <div class="row text-center">
+
+        <div class="col-lg-3 col-md-6 mb-4">
+          <div class="card">
+            <div class="card-body">
+              <h4 class="card-title">Start A Claim!</h4>
+              <p class="card-text">Automotive accidents are the worse but making an insurance claim makes it even worse. Let's keep track of what you need to make the most out of your claim!</p>
+            </div>
+            <div class="card-footer">
+              <%= link_to "Let's Get Things Going!", claims_path, :class=>"btn btn-primary"%>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-lg-3 col-md-6 mb-4">
+          <div class="card">
+            <div class="card-body">
+              <h4 class="card-title">Check Out Your Insurances!</h4>
+              <p class="card-text">Let's keep track of what is insured and who is covered! You add and edit the insurances you have to make things a lot more manageable!</p>
+            </div>
+            <div class="card-footer">
+              <%= link_to "Check It Out!", coverage_path, :class=>"btn btn-primary"%>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- /.row -->
+
+    </div>
+    <!-- /.container -->
+
+    <!-- Footer -->
+    <footer class="py-5 bg-dark">
+      <div class="container">
+        <p class="m-0 text-center text-white">Copyright &copy; MyCrashBox 2017</p>
+      </div>
+      <!-- /.container -->
+    </footer>
+
+    <!-- Bootstrap core JavaScript -->
+    <script src="vendor/jquery/jquery.min.js"></script>
+    <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+
+  </body>
+
+
